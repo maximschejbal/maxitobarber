@@ -1,3 +1,91 @@
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-BoldItalic.woff2') format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-Light.woff2') format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-Medium.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-LightItalic.woff2') format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-Bold.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-Black.woff2') format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-Italic.woff2') format("woff2"), url('../fonts/Satoshi-VariableItalic.woff2') format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-MediumItalic.woff2') format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../fonts/Satoshi-BlackItalic.woff2') format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi Variable;
+  src: url('../fonts/Satoshi-Variable.woff2') format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color--backgroung: #efefef;
   --font--satoshi: Satoshi, sans-serif;
@@ -253,6 +341,8 @@ blockquote {
 }
 
 .heading-2.text-weight-regular {
+  width: 100%;
+  font-size: 3rem;
   line-height: 1.1;
 }
 
@@ -387,7 +477,7 @@ blockquote {
   align-items: flex-end;
   width: 100%;
   height: 100%;
-  padding-bottom: 4vh;
+  padding-bottom: 1vh;
   display: flex;
   position: absolute;
   inset: 0%;
@@ -1764,7 +1854,7 @@ blockquote {
 }
 
 .camera {
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -1794,6 +1884,10 @@ blockquote {
   color: #6445e5;
 }
 
+.portfolio-block.last {
+  padding-right: 10%;
+}
+
 .background-video {
   height: 100%;
 }
@@ -1806,6 +1900,8 @@ blockquote {
   grid-column-gap: 19px;
   grid-row-gap: 19px;
   flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
 }
 
@@ -1815,6 +1911,12 @@ blockquote {
 
 .div-block {
   display: flex;
+}
+
+.paragraph {
+  font-size: var(--heading--h3);
+  width: 60%;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 991px) {
@@ -2185,6 +2287,10 @@ blockquote {
   .portfolio-block {
     width: 100%;
   }
+
+  .paragraph {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2455,6 +2561,11 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .paragraph {
+    font-size: var(--heading--h4);
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2698,9 +2809,14 @@ blockquote {
   .title.h1.me-work {
     font-size: 2em;
   }
+
+  .paragraph {
+    font-size: var(--heading--h6);
+    width: 100%;
+  }
 }
 
-#w-node-bf0f0b97-976a-e609-d8f1-f6df6097a77e-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a781-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a784-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a787-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a78a-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a78d-818fbb15 {
+#w-node-bf0f0b97-976a-e609-d8f1-f6df6097a77e-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a781-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a784-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a787-818fbb15, #w-node-bf0f0b97-976a-e609-d8f1-f6df6097a78a-818fbb15 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
