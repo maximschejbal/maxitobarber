@@ -250,6 +250,7 @@ blockquote {
   font-size: var(--heading--h1);
   font-weight: 400;
   line-height: 1;
+  display: none;
 }
 
 .rich-text p {
@@ -304,6 +305,7 @@ blockquote {
 .text-size-display {
   font-size: var(--text-size--display);
   letter-spacing: -.5975rem;
+  cursor: default;
   font-weight: 300;
   line-height: 1;
 }
@@ -1579,6 +1581,10 @@ blockquote {
   display: flex;
 }
 
+.brand.w--current {
+  height: auto;
+}
+
 .nav-link {
   color: #fbfbfb;
   padding-top: .2rem;
@@ -1913,6 +1919,10 @@ blockquote {
   display: flex;
 }
 
+.image-2 {
+  max-width: 85%;
+}
+
 .paragraph {
   font-size: var(--heading--h3);
   width: 60%;
@@ -2240,8 +2250,12 @@ blockquote {
     padding-bottom: .6rem;
   }
 
-  .brand, .brand.w--current {
+  .brand {
     width: 8rem;
+  }
+
+  .brand.w--current {
+    width: 6rem;
   }
 
   .nav-link {
@@ -2286,6 +2300,10 @@ blockquote {
 
   .portfolio-block {
     width: 100%;
+  }
+
+  .image-2 {
+    max-width: 50%;
   }
 
   .paragraph {
@@ -2504,8 +2522,13 @@ blockquote {
     padding-bottom: .3rem;
   }
 
-  .brand, .brand.w--current {
+  .brand {
     width: 10rem;
+  }
+
+  .brand.w--current {
+    width: 6rem;
+    padding-left: 0;
   }
 
   .hero-section-works {
@@ -2779,7 +2802,7 @@ blockquote {
   }
 
   .brand.w--current {
-    width: 14rem;
+    width: 6rem;
   }
 
   .nav-menu {
@@ -2808,6 +2831,10 @@ blockquote {
 
   .title.h1.me-work {
     font-size: 2em;
+  }
+
+  .image-2 {
+    max-width: 60%;
   }
 
   .paragraph {
