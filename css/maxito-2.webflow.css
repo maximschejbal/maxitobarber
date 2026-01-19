@@ -142,7 +142,7 @@ body {
   font-size: var(--text-size--regular);
   line-height: 1.5;
   text-decoration: none;
-  owerflow-x: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
