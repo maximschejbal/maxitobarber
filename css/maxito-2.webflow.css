@@ -142,6 +142,7 @@ body {
   font-size: var(--text-size--regular);
   line-height: 1.5;
   text-decoration: none;
+  owerflow-y: hidden;
 }
 
 h1 {
