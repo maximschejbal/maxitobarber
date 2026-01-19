@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--  Last Published: Mon Jan 19 2026 10:07:55 GMT+0000 (Coordinated Universal Time)  -->
 <html
   data-wf-page="672c04acb7e39948818fbb15"
@@ -186,10 +186,10 @@
       !(function (o, c) {
         var n = c.documentElement,
           t = " w-mod-";
-        (n.className += t + "js"),
+        ((n.className += t + "js"),
           ("ontouchstart" in o ||
             (o.DocumentTouch && c instanceof DocumentTouch)) &&
-            (n.className += t + "touch");
+            (n.className += t + "touch"));
       })(window, document);
     </script>
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
@@ -341,7 +341,9 @@
                 id="eb5820c0-f270-5d0b-ebdd-4af05fa132e3-video"
                 autoplay=""
                 loop=""
-                style="background-image: url('videos/sdsdad-poster-00001.jpg')"
+                style="
+                  background-image: url(&quot;videos/sdsdad-poster-00001.jpg&quot;);
+                "
                 muted=""
                 playsinline=""
                 data-wf-ignore="true"
@@ -745,7 +747,11 @@
               </div>
             </div>
           </div>
-          <div data-w-id="bab1171d-6132-ba43-2731-38f7d9cf6b19" class="flex">
+          <div
+            data-w-id="bab1171d-6132-ba43-2731-38f7d9cf6b19"
+            style="opacity: 0"
+            class="flex"
+          >
             <div class="map">
               <div class="heading-3 text-weight-regular">
                 Pobočka Hradec Králové
